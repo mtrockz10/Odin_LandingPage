@@ -1,5 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Roboto;
+    color: #f9faf8;
+}
+
+.bluebody, footer {
+    background-color: #1F2937;
+}
+
+section div h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+section div p {
+    font-size: 18px;
+    color: #e5e7eb;
+    width: 400px;
+}
+
+header {
+    padding: 0 2em;
+}
+
+.hero-header {
+    display: flex;
+    width: 100%;
+    padding: 2em 4em;
+}
+
+.psc-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 20%;
+}
+
+.nav-menu {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    padding: 2em 4em;
+}
+
+ul li {
+    padding: 0 1em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #f9faf8
+}
+
+.introduction {
+    padding: 2em 6rem;
+}
+
+.intro-pic {
+    height: 250px;
+    width: 500px;
+    float: right;
+    margin-right: 5rem;
+}
+
+.sign-up1 {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.information h2 {
+    color: #1F2937;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: center;
+    padding-left: 20rem;
+    margin: 2rem 0
+}
+
+.info-item-pic {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #1F2937;
+    border-radius: 10px;
+}
+
+.pic-description {
+    color: #1F2937;
+    font-size: 12px;
+}
+
+.quotes {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.quotes p {
+    color: #1F2937;
+}
+
+.message {
+    font-style: italic;
+}
+
+.author {
+    padding-left: 20rem;
+    font-weight: bold;
+}
+
+.contact {
+    width: 600px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    background-color: #3882f6;
+    padding: 1rem 2rem;
+    
+}
+
+.sign-up2 {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: 1px solid #f9faf8;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-left: 1rem;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
 }
