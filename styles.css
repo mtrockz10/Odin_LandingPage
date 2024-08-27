@@ -14,6 +14,52 @@ body {
 .bluebody, footer {
     background-color: #1F2937;
 }
+ section.img-slider {
+    display: flex;
+ }
+
+ .image-slider {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 600px;
+    overflow: hidden;
+    margin-left: 100px;
+ }
+
+ .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+ }
+
+ @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
 
 section div h1 {
     font-size: 48px;
@@ -26,25 +72,31 @@ section div p {
     color: #e5e7eb;
     width: 400px;
 }
-
+/*
 header {
     padding: 0 2em;
 }
+*/
 
 .hero-header {
     display: flex;
     width: 100%;
-    padding: 2em 4em;
+    padding: 2em 0;
 }
 
 .psc-logo {
     height: 80px;
     width: 80px;
     border-radius: 20%;
+    mix-blend-mode: multiply;
+    margin-left: 5rem;
 }
 
 .nav-menu {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ececf7;
 }
 
 ul {
@@ -61,7 +113,12 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #f9faf8
+    color: #1F2937
+}
+
+ul li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .introduction {
@@ -69,10 +126,9 @@ ul li a {
 }
 
 .intro-pic {
-    height: 250px;
-    width: 500px;
-    float: right;
-    margin-right: 5rem;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 .sign-up1 {
@@ -88,17 +144,32 @@ ul li a {
     margin-top: 1em;
 }
 
-.information h2 {
-    color: #1F2937;
+
+
+.info-grid {
+    display: flex;
+}
+
+.info-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin-top: 2rem;
 }
 
-.info-grid {
+.information {
     display: flex;
     justify-content: center;
-    padding-left: 20rem;
-    margin: 2rem 0
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.information h2 {
+    color: #1F2937;
 }
 
 .info-item-pic {
@@ -112,7 +183,7 @@ ul li a {
     color: #1F2937;
     font-size: 12px;
 }
-
+ 
 .quotes {
     background-color: #e5e7eb;
     display: flex;
@@ -154,8 +225,12 @@ ul li a {
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    margin-top: 1em;
     margin-left: 1rem;
+}
+
+.bot-signup {
+    display: flex;
+    align-items: center;
 }
 
 footer {
